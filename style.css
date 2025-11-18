@@ -58,6 +58,9 @@ footer {
     padding: 10px;
     font-size: 3em;
     text-align: center;
+    color: var(--base3); 
+    width: 100%;
+    margin-top: auto; 
 }
 
 h1 {
