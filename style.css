@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+:root {
+    --base03: #002b36;
+    --base02: #073642;
+    --base01: #586e75;
+    --base00: #657b83;
+    --base0: #839496;
+    --base1: #93a1a1;
+    --base2: #eee8d5;
+    --base3: #fdf6e3;
+    --yellow: #b58900;
+    --orange: #cb4b16;
+    --red: #dc322f;
+    --magenta: #d33682;
+    --violet: #6c71c4;
+    --blue: #268bd2;
+    --cyan: #2aa198;
+    --green: #859900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+html {
+    background-color: var(--base2);
+}
+
+header {
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Slabo 27px", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3em;
+    color: var(--base03);
+}
+
+nav {}
+
+a {
+    font-family: "Slabo 27px", serif;
+}
+p {
+    font-family: "Slabo 27px", serif;
+    font-weight: 1000;
+    font-size: 2.8em;
+    color: var(--base3);
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.redpoint {
+    color: var(--red);
+    font-size: 1em;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navlink {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    justify-items: right;
+    gap: 1rem;
+}
+
+.arc01 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: var(--cyan);
+}
+
+.btn-blue{
+    font-family: "Slabo 27px", serif;
+    padding: 3px 5px;
+    border: var(--blue);
+    border-style: solid;
+    background-color: var(--blue);
+    color: var(--base3);
+    border-radius: 15px;
+    font-size: 1em;
+    
+}
+.btn-blue:hover {
+    cursor: pointer;
+}
+.btn-white{
+    font-family: "Slabo 27px", serif;
+    padding: 3px 5px;
+    border: var(--blue);
+    border-style: solid;
+    background-color: var(--base3);
+    color: var(--blue);
+    border-radius: 15px;
+    font-size: 1em;
+}
+.btn-white:hover {
+    cursor: pointer;
+}
+.btn-arc{
+    font-family: "Slabo 27px", serif;
+    border: var(--magenta);
+    border-style: solid;
+    background-color: var(--magenta)
+    ;
+    color: var(--base3);
+    border-radius: 15px;
+    padding: 10px 20px;
+    max-width: fit-content;
+    font-size: 1.5em;
+}
+.btn-arc:hover {
+    cursor: pointer;
+}
+.arc02{
+    padding: 30px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--green);
+}
+.arc02 img{
+    width: 100px;
+  height: auto;
+}

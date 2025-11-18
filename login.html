@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Burger CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 1rem 2rem;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-logo a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Checkbox caché */
+        #menu-toggle {
+            display: none;
+        }
+
+        /* Label du bouton burger */
+        .menu-button {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .menu-button .bar {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 3px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        /* Menu desktop */
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Version Mobile */
+        @media screen and (max-width: 768px) {
+            .navbar {
+                padding: 1rem;
+            }
+
+            .menu-button {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                flex-direction: column;
+                background: linear-gradient(135deg, #667eea, #764ba2);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                padding: 2rem 0;
+                gap: 0;
+            }
+
+            .nav-item {
+                margin: 1rem 0;
+            }
+
+            /* Quand la checkbox est cochée, afficher le menu */
+            #menu-toggle:checked ~ .nav-menu {
+                left: 0;
+            }
+
+            /* Animation du bouton burger */
+            #menu-toggle:checked ~ .menu-button .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            #menu-toggle:checked ~ .menu-button .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+
+            #menu-toggle:checked ~ .menu-button .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#">MonSite</a>
+            </div>
+
+            <!-- Checkbox caché -->
+            <input type="checkbox" id="menu-toggle">
+            
+            <!-- Menu -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#accueil" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projets" class="nav-link">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Bouton Burger -->
+            <label for="menu-toggle" class="menu-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+        </div>
+    </nav>
+</body>
+</html>
