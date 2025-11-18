@@ -27,7 +27,7 @@
 }
 
 html {
-    background-color: var(--base2);
+    background-color: var(--base02);
     font-size: 16px;
 }
 html, body{
@@ -41,7 +41,7 @@ header {
     margin: 0;
 }
 footer{
-    background-color: var(--base02);
+    background: var(--base02);
     padding: 10px;
     font-size: 3em;
     text-align: center;
