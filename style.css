@@ -44,7 +44,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: var(--base02);
+    background-color: var(--base2);
 }
 header {
     padding-top: 10px;
