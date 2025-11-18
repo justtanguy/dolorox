@@ -46,7 +46,9 @@ h1 {
     color: var(--base03);
 }
 
-nav {}
+nav {
+    
+}
 
 a {
     font-family: "Slabo 27px", serif;
