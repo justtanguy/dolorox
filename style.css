@@ -20,8 +20,10 @@
 }
 
 * {
-    
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
 html {
@@ -31,17 +33,27 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
-html, body{
-    height: 100%;
-}
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--base02);
+}
 header {
     padding-top: 10px;
     padding-left: 50px;
     padding-right: 50px;
     margin: 0;
 }
-footer{
+
+footer {
     background: var(--base02);
     padding: 10px;
     font-size: 3em;
@@ -55,15 +67,18 @@ h1 {
     font-size: 3em;
     color: var(--base03);
 }
+
 a {
     font-family: "Slabo 27px", serif;
 }
+
 p {
     font-family: "Slabo 27px", serif;
     font-weight: 1000;
     font-size: 2.8em;
     color: var(--base3);
 }
+
 ul {
     list-style: none;
     margin: 0;
@@ -113,7 +128,7 @@ ul {
     background-color: var(--cyan);
 }
 
-.btn-blue{
+.btn-blue {
     font-family: "Slabo 27px", serif;
     padding: 3px 5px;
     border: var(--blue);
@@ -122,12 +137,14 @@ ul {
     color: var(--base3);
     border-radius: 15px;
     font-size: 1em;
-    
+
 }
+
 .btn-blue:hover {
     cursor: pointer;
 }
-.btn-white{
+
+.btn-white {
     font-family: "Slabo 27px", serif;
     padding: 3px 5px;
     border: var(--blue);
@@ -137,25 +154,28 @@ ul {
     border-radius: 15px;
     font-size: 1em;
 }
+
 .btn-white:hover {
     cursor: pointer;
 }
-.btn-arc{
+
+.btn-arc {
     font-family: "Slabo 27px", serif;
     border: var(--magenta);
     border-style: solid;
-    background-color: var(--magenta)
-    ;
+    background-color: var(--magenta);
     color: var(--base3);
     border-radius: 15px;
     padding: 10px 20px;
     max-width: fit-content;
     font-size: 1.5em;
 }
+
 .btn-arc:hover {
     cursor: pointer;
 }
-.arc02{
+
+.arc02 {
     padding: 30px 80px;
     display: flex;
     flex-direction: row;
@@ -163,7 +183,8 @@ ul {
     align-items: center;
     background-color: var(--green);
 }
-.arc02 img{
+
+.arc02 img {
     width: 100px;
-  height: auto;
+    height: auto;
 }
