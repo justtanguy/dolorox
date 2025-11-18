@@ -41,7 +41,7 @@ header {
     margin: 0;
 }
 footer{
-    background: var(--base02);
+    background-color: var(--base02);
     padding: 10px;
     font-size: 3em;
     text-align: center;
