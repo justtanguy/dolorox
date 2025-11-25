@@ -372,7 +372,7 @@ a {
 .btn-register-form:hover {
     background-color: var(--violet);
 }
-/* Styles pour la grille de prix simple */
+
 .pricing-section {
     display: flex;
     justify-content: center;
